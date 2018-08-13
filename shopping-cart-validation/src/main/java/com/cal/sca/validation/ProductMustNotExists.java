@@ -1,6 +1,6 @@
-package com.cal.sca.validation.validator;
+package com.cal.sca.validation;
 
-import com.cal.sca.validation.validatorImpl.ProductMustExistsValidator;
+import com.cal.sca.validation.validators.ProductMustNotExistsValidator;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.Constraint;
@@ -12,11 +12,11 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE, ElementType.ANNOTATION_TYPE, ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = {ProductMustExistsValidator.class})
+@Constraint(validatedBy = {ProductMustNotExistsValidator.class})
 @Document
-public @interface ProductMustExists {
+public @interface ProductMustNotExists {
 
-    String message() default "Product Must Exists";
+    String message() default "ProductMustNotExists";
 
     Class<?>[] groups() default {};
 

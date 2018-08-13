@@ -1,7 +1,7 @@
 package com.cal.sca.controller;
 
 import com.cal.sca.entity.Product;
-import com.cal.sca.model.controller.AddProductModel;
+import com.cal.sca.model.controller.CreateProductModel;
 import com.cal.sca.model.controller.ResponseModel;
 import com.cal.sca.model.service.CreateProductRequest;
 import com.cal.sca.model.service.GetProductListRequest;
@@ -26,7 +26,7 @@ public class ProductController {
     private ServiceExecutor serviceExecutor;
 
     @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<ResponseModel<Product>> createProduct(@RequestBody AddProductModel requestBody) {
+    public Mono<ResponseModel<Product>> createProduct(@RequestBody CreateProductModel requestBody) {
         CreateProductRequest request = CreateProductRequest.builder()
                 .id(requestBody.getId())
                 .name(requestBody.getName())

@@ -1,6 +1,6 @@
 package com.cal.sca.model.service;
 
-import com.cal.sca.validation.validator.ProductMustExists;
+import com.cal.sca.validation.ProductMustExists;
 import lombok.Builder;
 import lombok.Data;
 

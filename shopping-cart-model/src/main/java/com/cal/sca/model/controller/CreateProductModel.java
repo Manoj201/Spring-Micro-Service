@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class AddProductModel {
+public class CreateProductModel {
 
     private String id;
 

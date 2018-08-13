@@ -1,21 +1,19 @@
-package com.cal.sca.validation.validatorImpl;
+package com.cal.sca.validation.validators;
 
 import com.cal.sca.repository.ProductRepository;
-import com.cal.sca.validation.validator.ProductMustNotExists;
+import com.cal.sca.validation.ProductMustExists;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-@Component
-public class ProductMustNotExistsValidator implements ConstraintValidator<ProductMustNotExists, String>{
+public class ProductMustExistsValidator implements ConstraintValidator<ProductMustExists, String> {
 
     @Autowired
     private ProductRepository productRepository;
 
     @Override
-    public void initialize(ProductMustNotExists productMustNotExists) {
+    public void initialize(ProductMustExists constraintAnnotation) {
 
     }
 
@@ -24,7 +22,6 @@ public class ProductMustNotExistsValidator implements ConstraintValidator<Produc
         if (value == null) {
             return true;
         }
-        boolean data = productRepository.existsById(value).block() == Boolean.FALSE;
-        return data;
+        return productRepository.findById(value).block() != null ;
     }
 }

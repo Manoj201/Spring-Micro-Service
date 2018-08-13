@@ -45,7 +45,7 @@ public abstract class AbstractCommand<RESULT, REQUEST> implements Command<RESULT
 
     @Override
     public Mono<List<RESULT>> executeList(REQUEST request) {
-//        Set<ConstraintViolation<REQUEST>> constraintViolations = validator.validate(controller);
+//        Set<ConstraintViolation<REQUEST>> constraintViolations = validators.validate(controller);
 //        if (constraintViolations.isEmpty()) {
             return doExecuteList(request);
 //        } else {
