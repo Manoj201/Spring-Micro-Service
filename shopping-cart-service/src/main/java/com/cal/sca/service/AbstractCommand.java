@@ -45,11 +45,11 @@ public abstract class AbstractCommand<RESULT, REQUEST> implements Command<RESULT
 
     @Override
     public Mono<List<RESULT>> executeList(REQUEST request) {
-//        Set<ConstraintViolation<REQUEST>> constraintViolations = validators.validate(controller);
-//        if (constraintViolations.isEmpty()) {
+        Set<ConstraintViolation<REQUEST>> constraintViolations = validator.validate(request);
+        if (constraintViolations.isEmpty()) {
             return doExecuteList(request);
-//        } else {
-//            return Flux.error(new CommandValidationException(constraintViolations));
-//        }
+        } else {
+            return Mono.error(new CommandValidationException(constraintViolations));
+        }
     }
 }
