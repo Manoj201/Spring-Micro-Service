@@ -2,6 +2,7 @@ package com.cal.sca.model.service;
 
 import com.cal.sca.validation.CartMustExists;
 import com.cal.sca.validation.ProductMustExists;
+import com.cal.sca.validation.StockMustAvailable;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 
 @Data
 @Builder
+@StockMustAvailable(productId = "productId", quantity = "quantity")
 public class AddProductToCartRequest {
 
     @NotBlank

@@ -1,3 +1,9 @@
-/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/controller/AddProductRequest.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/service/GetProductRequest.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/service/AddProductToCartRequest.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/service/CreateCartRequest.java
 /home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/controller/ResponseModel.java
 /home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/service/CreateProductRequest.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/controller/CreateProductModel.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/controller/CreateCartModel.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/service/GetProductListRequest.java
+/home/calcey/Projects/shopping-cart/shopping-cart-model/src/main/java/com/cal/sca/model/controller/AddProductToCartModel.java

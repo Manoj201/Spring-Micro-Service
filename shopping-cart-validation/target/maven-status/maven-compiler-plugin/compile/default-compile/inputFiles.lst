@@ -1,0 +1,11 @@
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/package-info.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/validators/ProductMustNotExistsValidator.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/validators/CartMustNotExistsValidator.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/validators/StockMustAvailableValidator.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/CartMustNotExists.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/StockMustAvailable.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/validators/CartMustExistsValidator.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/validators/ProductMustExistsValidator.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/ProductMustExists.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/CartMustExists.java
+/home/calcey/Projects/shopping-cart/shopping-cart-validation/src/main/java/com/cal/sca/validation/ProductMustNotExists.java

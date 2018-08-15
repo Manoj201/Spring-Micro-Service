@@ -1,2 +1,6 @@
-com/cal/sca/entity/Product$ProductBuilder.class
+com/cal/sca/entity/Cart.class
+com/cal/sca/entity/CartItem.class
+com/cal/sca/entity/CartItem$CartItemBuilder.class
 com/cal/sca/entity/Product.class
+com/cal/sca/entity/Product$ProductBuilder.class
+com/cal/sca/entity/Cart$CartBuilder.class
